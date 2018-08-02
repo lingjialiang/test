@@ -4,7 +4,7 @@ import requests, json
 from datetime import datetime,timedelta
 import csv
 
-if __name__ == '__main__':
+def weather():
     now=datetime.now()
     before=now+timedelta(hours=-1)
     url = "http://logger.m2m-cloud-std.kddi.ne.jp/v1.0/data/regular"
