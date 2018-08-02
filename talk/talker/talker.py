@@ -9,8 +9,8 @@ def talker():
 	rospy.init_node('talker', anonymous=True)
 	rate = rospy.Rate(1)
 	while not rospy.is_shutdown():
-		#hello_str = "goodbye %s" % rospy.get_time()
-		hello_str =api.weather()
+		hello_str = "goodbye %s" % rospy.get_time()
+		#hello_str =api.weather()
 		rospy.loginfo(hello_str)
 		pub.publish(hello_str)
 		rate.sleep()
