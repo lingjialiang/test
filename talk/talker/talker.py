@@ -7,7 +7,7 @@ import weatherapi as api
 def talker():
 	pub = rospy.Publisher('telemetry', String, queue_size=10)
 	rospy.init_node('talker', anonymous=True)
-	rate = rospy.Rate(1)
+	rate = rospy.Rate(10)
 	while not rospy.is_shutdown():
 		hello_str = "its hot %s" % rospy.get_time()
 		#hello_str =api.weather()
