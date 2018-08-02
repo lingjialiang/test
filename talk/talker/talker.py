@@ -2,6 +2,7 @@
 
 import rospy
 from std_msgs.msg import String
+import weatherapi as api
 
 def talker():
 	pub = rospy.Publisher('telemetry', String, queue_size=10)
