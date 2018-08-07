@@ -15,10 +15,8 @@ def k():
         "terminal_id" : "410",
         "no" : [2,3,4,5,6,7,8,9,14]
             }],
-       # "from" : "{0:%Y%m%d%H%M%S}".format(before),
-       #  "to" : "{0:%Y%m%d%H%M%S}".format(now)
-        "from" : "20180801101000",
-        "to" : "20180801105000"
+        "from" : "{0:%Y%m%d%H%M%S}".format(before),
+        "to" : "{0:%Y%m%d%H%M%S}".format(now)
     }
     json_data = json.dumps(obj).encode("utf-8")
     headers = {"Host":"logger.m2m-cloud-std.kddi.ne.jp",
